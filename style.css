@@ -1,0 +1,163 @@
+:root{
+    --text-color: white;
+    --background-color: blueviolet;
+    --edit-button-bg-color: darkgreen;
+    --edit-button-bg-hover: rgb(6, 131, 6);
+    --edit-button-bg-active:  rgb(3, 77, 3); 
+    --delete-button-bg-color: darkred;
+    --delete-button-bg-hover: rgb(170, 10, 10);
+    --delete-button-bg-active: rgb(78, 5, 5);
+    --add-button-bg-color: darkblue;
+    --button-hover-shadow: rgb(248, 0, 0);
+    --add-button-bg-hover: rgb(14, 14, 180);
+    --add-button-bg-active: rgb(3, 3, 73);
+    --text-color: white;
+    --box-shadow: darkorchid;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 90px;
+    box-shadow: 0px 0px 20px var(--box-shadow);
+    border-radius: 20px;
+    padding: 18px 40px;
+    background-color: var(--background-color);
+}
+
+.logo, h1{
+    color: var(--text-color);
+}
+.lists ul li{
+    color: var(--text-color);
+    font-size: 20px;
+}
+.todoSection{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+    background-color: var(--background-color);
+    
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px var(--box-shadow);
+    padding: 40px;
+}
+.addItem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+}
+.addItem input, .addBtn{
+    padding: 15px 8px;
+    width: 400px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+.addItem input:focus{
+   box-shadow:  0px 0px 20px var(--button-hover-shadow);
+   
+   
+}
+.addItem button{
+    background-color: var(--add-button-bg-color);
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+.addBtn:hover{
+     background-color: var(--add-button-bg-hover);
+     box-shadow: 0px 0px 20px var(--text-color);
+     transition: ease-in-out 0.2s;
+}
+.addBtn:active{
+    background-color: var(--add-button-bg-active);
+    transition: ease-in-out 0.2s;
+}
+.todoList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todoList table .itemName, .itemAction, .itemDescription, .srNo1, .me{
+    background-color: var(--box-shadow);
+    padding: 20px 30px;
+    color: var(--text-color);
+}
+.srNo{
+    padding: 20px;
+}
+.itemName, .itemDescription , .itemAction {
+    width: 200px;
+}
+.editBtn{
+    background-color: var(--edit-button-bg-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--text-color);
+    transition: ease-in-out 0.2s;
+}
+.editBtn:hover{
+    background-color: var(--edit-button-bg-hover);
+    box-shadow: 0px 0px 20px var(--text-color);
+    transition: ease-in-out 0.2s;
+}
+.editBtn:active{
+    background-color: var(--edit-button-bg-active);
+    
+    transition: ease-in-out 0.2s;
+}
+.deleteBtn{
+    background-color: var(--delete-button-bg-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: var(--text-color);
+    transition: ease-in-out 0.2s;
+}
+.deleteBtn:hover{
+    background-color: var(--delete-button-bg-hover);
+    box-shadow: 0px 0px 20px var(--text-color);
+     transition: ease-in-out 0.2s;
+}
+.deleteBtn:active{
+    background-color: var(--delete-button-bg-active);
+     transition: ease-in-out 0.2s;
+}
+td{
+    text-align: center;
+    padding: 10px 40px;
+    color: var(--text-color);
+   transition: all 0.2s;
+    
+}
+
+td:hover{
+    box-shadow: 0px 0px 20px var(--text-color);
+    transition: all 0.2s;
+}
+.actionn{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+th:hover{
+    box-shadow: 0px 0px 20px var(--button-hover-shadow);
+    transition: all 0.2s;
+}

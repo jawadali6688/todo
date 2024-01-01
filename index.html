@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer ></script>
+</head>
+<body>
+    <nav class="navBar">
+<div class="logo">
+    <h1>MyTodo</h1>
+</div>
+<div class="lists">
+    <ul>
+        <li>Todos</li>
+    </ul>
+</div>
+    </nav>
+    <section class="todoSection">
+       <div class="addItem">
+        <h1>Add Items</h1>
+        <input type="text" id="itemName" placeholder="Item Name" required>
+        <input type="text" id="itemDescription" placeholder="Item Description" required>
+        <button class="addBtn">Add Item</button>
+       </div>
+       <div class="todoList">
+        <table border="solid">
+           <thead>
+            <th class="srNo1" >Sr. No</th>
+            <th class="itemName">Item Name</th>
+            <th class="itemDescription">Item Description</th>
+            <th class="itemAction"> Action</th>
+           </thead>
+            <tbody id="contentOfTodos">
+
+            </tbody>
+          
+        </table>
+       </div>
+    </section>
+
+</body>
+</html>
